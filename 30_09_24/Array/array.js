@@ -7,20 +7,22 @@
  * añade al principio los elementos 'Rap' y 'Raggae'
  */
 
-let estilosMusicales = ['Jazz', 'Blues'];
+let generosMusicales = ['Jazz', 'Blues'];
 
-estilosMusicales.push('Rock-n-Roll');
+generosMusicales.push('Rock-n-Roll');
 
-let mitad = estilosMusicales.length;
+let mitad = generosMusicales.length;
 
 if (mitad % 2 === 0){
-    mitad = mitad + 1;
+    mitad = mitad / 2;
+} else {
+    Math.floor(mitad/2) + 1
 }
 
-estilosMusicales.splice(mitad, mitad, 'Classics')
+generosMusicales.splice(mitad, mitad, 'Classics')
 
-let primerEstilo = estilosMusicales.shift()
-alert (primerEstilo)
+alert (generosMusicales.shift())
 
-estilosMusicales.splice(1,1,'Rap')
-estilosMusicales.splice(1,1,'Raggae')
+generosMusicales.unshift('Raggae','Rap')
+
+console.log(generosMusicales)
