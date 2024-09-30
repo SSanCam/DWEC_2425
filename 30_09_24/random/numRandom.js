@@ -1,5 +1,5 @@
 /*
-Sacar un número aleatorio entre 1-1000 simulando un min y un max.
+devuelve un numero random 
 */
 let min = 10 ;
 let max = 20 ;
