@@ -62,3 +62,35 @@ Ejemplo:
   console.log("Esta función se ejecuta automáticamente.");
 })();
 Además de estas, existen otros tipos de funciones especiales como las funciones generadoras (function*) y las funciones asíncronas (async).
+
+
+## Arrays
+
+- *for ... of*
+
+- *while*
+
+- *for* tradicional
+
+- *forEach(function)*
+
+- *map()*
+    Parecido al forEach
+  
+
+// ------------------------------------------------- \\
+01/10/24
+
+  ejercicio08
+
+## OBJETOS
+· freeze
+
+· seal
+
+> recorrer objetos
+
+for...in
+
+
+referencias y copias
