@@ -1,3 +1,6 @@
+/*
+Ejercicio1:FuncionesPredefinidasyDefinicióndeFunciones
+*/
 function suma (num1, num2){
     return num1 + num2;
 }
