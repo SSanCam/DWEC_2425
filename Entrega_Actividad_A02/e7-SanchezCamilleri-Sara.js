@@ -40,6 +40,6 @@ class Gato extends Animal {
 }
 
 let perro = new Perro("El perro bob", 5);
-perro.hablar;
+perro.hablar();
 let gato = new Gato("Calcetines");
-gato.hablar;
+gato.hablar();
