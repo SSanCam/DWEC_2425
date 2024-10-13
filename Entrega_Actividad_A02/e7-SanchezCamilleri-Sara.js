@@ -3,43 +3,44 @@ Ejercicio7:JerarquíadeClases
 Define una clase Animal con propiedadescomonombreyedad,yunmétodohablar().Creados
 subclases:PerroyGato,queheredendeAnimalysobreescribanelmétodohablar().
 */
+
+// Definir la clase base Animal
 class Animal {
-    nombre;
-    edad;
-
     constructor(nombre, edad) {
-        this.nombre = nombre,
-        this.edad = edad
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
-    hablar (){
-        alert("Éste animal está hablando!");
+    hablar() {
+        alert(`${this.nombre} está haciendo un sonido!`);
     }
 }
-/*
-let perro = new Animal("El perro bob", 10);
-let gato = new Animal("El gato calcetines", 5);
-gato.hablar("asd");
-*/
-class Perro extends Animal{
-    constructor(nombre, edad){
+
+// Subclase Perro que hereda de Animal
+class Perro extends Animal {
+    constructor(nombre, edad) {
         super(nombre, edad);
     }
-    hablar (){
-        alert("Éste animal hace guau!!");
-    } 
+
+    hablar() {
+        alert(`${this.nombre} hace guau!`);
+    }
 }
 
+// Subclase Gato que hereda de Animal
 class Gato extends Animal {
-    constructor(nombre, edad){
+    constructor(nombre, edad) {
         super(nombre, edad);
     }
-    hablar () {
-        alert("Éste animal hace miau!!!!");
+
+    hablar() {
+        alert(`${this.nombre} hace miau!`);
     }
 }
 
-let perro = new Perro("El perro bob", 5);
-perro.hablar();
-let gato = new Gato("Calcetines");
-gato.hablar();
+// Crear instancias de Perro y Gato
+let perro = new Perro("El perro Bob", 5);
+perro.hablar(); // Salida: "El perro Bob hace guau!"
+
+let gato = new Gato("Calcetines", 3);  // Añadir la edad faltante
+gato.hablar(); // Salida: "Calcetines hace miau!"
