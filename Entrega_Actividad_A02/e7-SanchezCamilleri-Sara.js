@@ -12,7 +12,7 @@ class Animal {
     }
 
     hablar() {
-        alert(`${this.nombre} está haciendo un sonido!`);
+        alert("${this.nombre} está haciendo un sonido!");
     }
 }
 
@@ -23,7 +23,7 @@ class Perro extends Animal {
     }
 
     hablar() {
-        alert(`${this.nombre} hace guau!`);
+        alert("${this.nombre} hace guau!");
     }
 }
 
@@ -34,7 +34,7 @@ class Gato extends Animal {
     }
 
     hablar() {
-        alert(`${this.nombre} hace miau!`);
+        alert("${this.nombre} hace miau!");
     }
 }
 
