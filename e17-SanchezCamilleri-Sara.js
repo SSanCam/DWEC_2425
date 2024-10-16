@@ -13,7 +13,7 @@ class Producto {
         if (this.cantidadStock < 0) {
             this.cantidadStock = 0; // No se puede tener stock negativo
         }
-        console.log(`El stock de ${this.nombre} es ahora de ${this.cantidadStock} unidades.`);
+        console.log("El stock de ${this.nombre} es ahora de ${this.cantidadStock} unidades.");
     }
 }
 
@@ -26,22 +26,22 @@ class Inventario {
     // Método para agregar un nuevo producto al inventario
     agregarProducto(producto) {
         this.productos.push(producto);
-        console.log(`${producto.nombre} ha sido agregado al inventario.`);
+        console.log("${producto.nombre} ha sido agregado al inventario.");
     }
 
     // Método para eliminar un producto del inventario por su nombre
     eliminarProducto(nombre) {
         this.productos = this.productos.filter(producto => producto.nombre !== nombre);
-        console.log(`${nombre} ha sido eliminado del inventario.`);
+        console.log("${nombre} ha sido eliminado del inventario.");
     }
 
     // Método para buscar un producto por su nombre y mostrar su información
     buscarProducto(nombre) {
         const producto = this.productos.find(producto => producto.nombre === nombre);
         if (producto) {
-            console.log(`Producto encontrado: ${producto.nombre}, Categoría: ${producto.categoria}, Precio: ${producto.precio}, Stock: ${producto.cantidadStock}`);
+            console.log("Producto encontrado: ${producto.nombre}, Categoría: ${producto.categoria}, Precio: ${producto.precio}, Stock: ${producto.cantidadStock}");
         } else {
-            console.log(`El producto ${nombre} no está en el inventario.`);
+            console.log("El producto ${nombre} no está en el inventario.");
         }
     }
 }

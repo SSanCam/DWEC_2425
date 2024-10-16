@@ -11,7 +11,7 @@ function calcularPrecioFinal(precioBase, descuentos) {
     // Validar que los descuentos sean porcentajes válidos
     for (let descuento of descuentos) {
         if (descuento < 0 || descuento > 100 || isNaN(descuento)) {
-            console.log(`Error: El descuento ${descuento} no es válido.`);
+            console.log("Error: El descuento ${descuento} no es válido.");
             return null;
         }
         // Aplicar el descuento
@@ -25,7 +25,7 @@ function calcularPrecioFinal(precioBase, descuentos) {
 function mostrarPrecioFinal(precioBase, descuentos) {
     let precioFinal = calcularPrecioFinal(precioBase, descuentos);
     if (precioFinal !== null) {
-        console.log(`El precio final después de aplicar los descuentos es: ${precioFinal.toFixed(2)}`);
+        console.log("El precio final después de aplicar los descuentos es: ${precioFinal.toFixed(2)}");
     }
 }
 
